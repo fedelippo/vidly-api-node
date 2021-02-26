@@ -14,11 +14,32 @@ Make sure to follow all these steps exactly as explained below. Do not miss any 
 
 ### Install MongoDB
 
-To run this project, you need to install the latest version of MongoDB Community Edition first.
+To run this project you need to install the latest version of MongoDB Community Edition first.
+
+#### Install MongoDB locally
 
 https://docs.mongodb.com/manual/installation/
 
 Once you install MongoDB, make sure it's running.
+
+#### MongoDB using Docker container
+
+Install [Docker](https://www.docker.com/products/docker-desktop) on your machine.
+
+Clone the following repo which contains a Docker compose project to run an instance of
+MongoDB ready to be used with this _vidly-api-node_ app.
+
+```
+git clone https://github.com/fedelippo/mongo-docker.git
+cd mongo-docker
+docker-compose up -d
+```
+
+To make sure the container is running execute:
+
+```
+docker-compose logs -f
+```
 
 ### Install the Dependencies
 
